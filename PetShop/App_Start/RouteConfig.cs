@@ -18,6 +18,16 @@ namespace PetShop
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Admin Login",
+                url: "{controller}/{action}",
+                defaults: new
+                {
+                    controller = "Admin",
+                    action = "Login"
+                }
+            );
         }
     }
 }
